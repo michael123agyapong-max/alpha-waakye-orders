@@ -387,9 +387,9 @@ textarea{resize:none;}
         <div class="item-emoji">🥤</div>
         <div class="item-body"><div class="item-name">Soft Drinks</div><div class="item-desc">Coke 300ml, Sprite 300ml, Fanta 300ml</div></div>
         <div class="item-right">
-          <div class="item-price">GHC 8</div>
+          <div class="item-price">GHC 10</div>
           <div id="ctrl-sd" class="qty-row" style="display:none"><button class="qty-btn" onclick="chgQty('sd',-1)">−</button><span class="qty-val" id="qv-sd">1</span><button class="qty-btn" onclick="chgQty('sd',1)">+</button></div>
-          <div id="add-sd"><button class="add-btn" onclick="addItem('sd','Soft Drink',8,'🥤')">+ Add</button></div>
+          <div id="add-sd"><button class="add-btn" onclick="addItem('sd','Soft Drink',10,'🥤')">+ Add</button></div>
         </div>
       </div>
 
@@ -523,7 +523,7 @@ textarea{resize:none;}
       <div class="momo-card">
         <div class="momo-label">Mobile Money Payment</div>
         <div class="momo-title">Send Payment To</div>
-        <div class="momo-num">0551  741  969</div>
+        <div class="momo-num">0206  912  571</div>
         <div class="momo-name">Esther Mawuli Segbedzi</div>
         <div class="momo-nets"><span class="momo-net">MTN MoMo</span><span class="momo-net">Vodafone Cash</span><span class="momo-net">AirtelTigo Money</span></div>
       </div>
@@ -541,7 +541,7 @@ textarea{resize:none;}
       <div class="pay-steps">
         <div style="font-size:0.65rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">How to Pay</div>
         <div class="pay-step"><div class="pay-num">1</div><div>Open <strong>MTN MoMo</strong> / <strong>Vodafone Cash</strong> → Send Money</div></div>
-        <div class="pay-step"><div class="pay-num">2</div><div>Enter <strong>0551 741 969</strong> and amount <strong id="pay-amt2">GHC 0</strong></div></div>
+        <div class="pay-step"><div class="pay-num">2</div><div>Enter <strong>0206 912 571</strong> and amount <strong id="pay-amt2">GHC 0</strong></div></div>
         <div class="pay-step"><div class="pay-num">3</div><div>Type reference <strong id="pay-ref2">AW-XXXX</strong> in the note field</div></div>
         <div class="pay-step"><div class="pay-num">4</div><div>Send payment, then tap <strong>I've Paid</strong> below</div></div>
       </div>
@@ -616,7 +616,7 @@ const ITEMS={
   gi:{name:'Gizzard',price:7,emoji:'🍗'},
   fp:{name:'Fried Plantain',price:7,emoji:'🍌'},
   so:{name:'Sobolo',price:10,emoji:'🍹'},
-  sd:{name:'Soft Drink',price:8,emoji:'🥤'},
+  sd:{name:'Soft Drink',price:10,emoji:'🥤'},
   wa:{name:'Water (500ml)',price:5,emoji:'💧'},
 };
 const PAGES=['menu','customize','details','confirm','payment','done'];
@@ -766,7 +766,7 @@ function buildConfirmPage(){
     (c.note?`📝 *Note:* ${c.note}\n`:'')+
     `\n💰 *TOTAL: GHC ${total}*\n💳 *MoMo Ref:* ${S.oid}\n\n_Sent from Alpha Waakye Order App_`
   );
-  document.getElementById('wa-confirm-btn').href=`https://wa.me/233551741969?text=${msg}`;
+  document.getElementById('wa-confirm-btn').href=`https://wa.me/233206912571?text=${msg}`;
 }
 function onWaConfirm(){setTimeout(()=>toast('✅ Order sent! Now proceed to payment'),800);}
 function finishOrder(){
